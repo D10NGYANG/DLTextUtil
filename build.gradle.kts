@@ -25,6 +25,8 @@ dependencies {
 
 publishing {
     publications {
-        create("maven_public", MavenPublication::class)
+        create("maven_public", MavenPublication::class) {
+            from(components.getByName("java"))
+        }
     }
 }
