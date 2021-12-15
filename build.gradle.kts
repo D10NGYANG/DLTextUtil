@@ -22,3 +22,9 @@ dependencies {
     // 协程
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 }
+
+publishing {
+    publications {
+        create("maven_public", MavenPublication::class)
+    }
+}
