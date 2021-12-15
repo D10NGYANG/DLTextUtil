@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.6.10"
+    id("maven-publish")
 }
 
 group = "com.d10ng"
