@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.5.31"
     id("maven-publish")
 }
 
@@ -25,7 +25,7 @@ dependencies {
 
 publishing {
     publications {
-        create("maven_public", MavenPublication::class) {
+        create("release", MavenPublication::class) {
             from(components.getByName("java"))
         }
     }
