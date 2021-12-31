@@ -19,8 +19,12 @@ kotlin {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    // 单元测试
+    testImplementation("junit:junit:4.12")
     // 协程
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+    // 拼音处理
+    api("io.github.biezhi:TinyPinyin:2.0.3.RELEASE")
 }
 
 publishing {
