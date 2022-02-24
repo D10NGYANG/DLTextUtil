@@ -105,7 +105,7 @@ fun String.decodeBase64ToByteArray(): ByteArray {
 }
 
 fun String.decodeBase64(): String =
-    decodeBase64ToByteArray().toString(Charsets.UTF_8)?: ""
+    decodeBase64ToByteArray().toString(Charsets.UTF_8)
 
 fun ByteArray.decodeBase64(): ByteArray =
     toString(Charsets.UTF_8).decodeBase64ToByteArray()
@@ -161,4 +161,4 @@ fun String.encodeBase64(map: ByteArray = BASE64): String =
     toByteArray(Charsets.UTF_8).encodeBase64ToString(map)
 
 fun String.encodeBase64ToByteArray(map: ByteArray = BASE64): ByteArray =
-    encodeBase64().toByteArray(Charsets.UTF_8)
+    encodeBase64(map).toByteArray(Charsets.UTF_8)
