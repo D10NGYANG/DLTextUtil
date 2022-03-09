@@ -1,6 +1,29 @@
 package com.d10ng.text.string
 
 /**
+ * 利用正则表达式保留字符串
+ * @receiver String
+ * @param reg Regex
+ * @return String
+ */
+fun String.keep(reg: Regex): String {
+    val ls = reg.findAll(this).map { it.value }
+    val text = StringBuilder("")
+    ls.forEach { text.append(it) }
+    return text.toString()
+}
+
+/**
+ * 利用正则表达式过滤字符串
+ * @receiver String
+ * @param reg Regex
+ * @return String
+ */
+fun String.filter(reg: Regex): String {
+    return reg.replace(this, "")
+}
+
+/**
  * 判断字符串是否符合身份证规则
  *
  * @receiver [String]
