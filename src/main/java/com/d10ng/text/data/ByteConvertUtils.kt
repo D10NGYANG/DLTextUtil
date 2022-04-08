@@ -1,4 +1,4 @@
-package com.d10ng.text.byte
+package com.d10ng.text.data
 
 import com.d10ng.text.string.up2Length
 import java.nio.charset.Charset

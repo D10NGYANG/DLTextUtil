@@ -1,6 +1,6 @@
-package com.d10ng.text.byte
+package com.d10ng.text.data
 
-import com.d10ng.text.byte.constant.EndNumType
+import com.d10ng.text.data.constant.EndNumType
 import kotlin.experimental.and
 import kotlin.experimental.or
 import kotlin.experimental.xor

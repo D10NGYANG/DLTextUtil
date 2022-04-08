@@ -1,4 +1,4 @@
-package com.d10ng.text.byte
+package com.d10ng.text.data
 
 import kotlinx.coroutines.*
 

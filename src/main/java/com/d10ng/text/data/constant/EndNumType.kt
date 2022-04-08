@@ -1,4 +1,4 @@
-package com.d10ng.text.byte.constant
+package com.d10ng.text.data.constant
 
 /**
  * 校验和计算类型

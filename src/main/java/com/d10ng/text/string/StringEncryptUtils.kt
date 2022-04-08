@@ -1,7 +1,7 @@
 package com.d10ng.text.string
 
-import com.d10ng.text.byte.decodeBase64
-import com.d10ng.text.byte.encodeBase64ToString
+import com.d10ng.text.data.decodeBase64
+import com.d10ng.text.data.encodeBase64ToString
 import java.io.ByteArrayOutputStream
 import java.nio.charset.Charset
 import java.security.KeyFactory

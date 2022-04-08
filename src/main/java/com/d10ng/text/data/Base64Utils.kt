@@ -1,4 +1,4 @@
-package com.d10ng.text.byte
+package com.d10ng.text.data
 
 val BASE64 = charArrayOf(
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
