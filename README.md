@@ -8,6 +8,8 @@ allprojects {
   repositories {
     ...
     maven { url 'https://jitpack.io' }
+    // 或者我的GitHub镜像地址
+    maven { url 'https://raw.githubusercontent.com/D10NGYANG/maven-repo/main/repository'}
   }
 }
 ```
@@ -15,9 +17,7 @@ allprojects {
 ```gradle
 dependencies {
     // 字符串字节数据工具
-    implementation 'com.github.D10NGYANG:DLTextUtil:1.4.0'
-    // 协程
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+    implementation 'com.github.D10NGYANG:DLTextUtil:1.4.1'
 }
 ```
 3 混淆
