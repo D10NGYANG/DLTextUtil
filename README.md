@@ -17,7 +17,7 @@ allprojects {
 ```gradle
 dependencies {
     // 字符串字节数据工具
-    implementation 'com.github.D10NGYANG:DLTextUtil:1.4.1'
+    implementation 'com.github.D10NGYANG:DLTextUtil:1.4.2'
 }
 ```
 3 混淆
