@@ -2,22 +2,20 @@
 字符串、字节数据处理工具[![](https://jitpack.io/v/D10NGYANG/DLTextUtil.svg)](https://jitpack.io/#D10NGYANG/DLTextUtil)
 
 ## 使用
-1 Add it in your root build.gradle at the end of repositories:
+1 添加仓库
 ```gradle
 allprojects {
   repositories {
     ...
-    maven { url 'https://jitpack.io' }
-    // 或者我的GitHub镜像地址
     maven { url 'https://raw.githubusercontent.com/D10NGYANG/maven-repo/main/repository'}
   }
 }
 ```
-2 Add the dependency
+2 添加依赖
 ```gradle
 dependencies {
     // 字符串字节数据工具
-    implementation 'com.github.D10NGYANG:DLTextUtil:1.4.2'
+    implementation 'com.github.D10NGYANG:DLTextUtil:1.4.3'
 }
 ```
 3 混淆

@@ -1,21 +1,21 @@
 plugins {
-    kotlin("jvm") version "1.8.21"
+    kotlin("jvm") version "1.8.22"
     id("maven-publish")
 }
 
 group = "com.github.D10NGYANG"
-version = "1.4.2"
+version = "1.4.3"
 
 repositories {
     mavenCentral()
-    maven("https://jitpack.io" )
+}
+
+java {
+    withSourcesJar()
 }
 
 kotlin {
-    java {
-        targetCompatibility = JavaVersion.VERSION_1_8
-        sourceCompatibility = JavaVersion.VERSION_1_8
-    }
+    jvmToolchain(8)
 }
 
 dependencies {
