@@ -24,7 +24,7 @@ dependencies {
     // 单元测试
     testImplementation("junit:junit:4.13.2")
     // 拼音处理
-    api("io.github.biezhi:TinyPinyin:2.0.3")
+    api("io.github.biezhi:TinyPinyin:2.0.3.RELEASE")
 }
 
 val bds100MavenUsername: String by project
