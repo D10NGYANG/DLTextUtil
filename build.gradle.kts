@@ -1,6 +1,7 @@
 plugins {
-    kotlin("jvm") version "1.8.22"
+    kotlin("jvm") version "1.9.0"
     id("maven-publish")
+    id("com.github.ben-manes.versions") version "0.47.0"
 }
 
 group = "com.github.D10NGYANG"
@@ -23,7 +24,7 @@ dependencies {
     // 单元测试
     testImplementation("junit:junit:4.13.2")
     // 拼音处理
-    api("io.github.biezhi:TinyPinyin:2.0.3.RELEASE")
+    api("io.github.biezhi:TinyPinyin:2.0.3")
 }
 
 val bds100MavenUsername: String by project
@@ -47,5 +48,18 @@ publishing {
             }
             setUrl("https://nexus.bds100.com/repository/maven-releases/")
         }
+    }
+}
+
+fun isNonStable(version: String): Boolean {
+    val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.uppercase().contains(it) }
+    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
+    val isStable = stableKeyword || regex.matches(version)
+    return isStable.not()
+}
+
+tasks.withType<com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask> {
+    rejectVersionIf {
+        isNonStable(candidate.version)
     }
 }
